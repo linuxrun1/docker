@@ -1,7 +1,6 @@
 FROM ubuntu:18.04
 RUN apt-get update -y
 RUN apt-get install -y qemu-kvm libvirt-daemon-system libvirt-dev
-RUN apt-get install -y linux-image-$(uname -r)
 RUN apt-get install -y curl net-tools jq
 RUN apt-get autoclean
 RUN apt-get autoremove
